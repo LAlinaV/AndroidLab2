@@ -28,15 +28,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View v) {
         if (!isFinished) {
-            int inp = Integer.parseInt(etInput.getText().toString());
-            if (inp > num)
-                tvInfo.setText(getResources().getString(R.string.ahead));
-            if (inp < num)
-                tvInfo.setText(getResources().getString(R.string.behind));
-            if (inp == num) {
-                tvInfo.setText(getResources().getString(R.string.hit));
-                bControl.setText(getResources().getString(R.string.play_more));
-                isFinished = true;
+            if (etInput.getText().toString().equals("") || Integer.parseInt(etInput.getText().toString()) < 0 || Integer.parseInt(etInput.getText().toString()) > 200)
+            {
+               tvInfo.setText(R.string.error);
+            }else {
+                int inp = Integer.parseInt(etInput.getText().toString());
+                if (inp > num)
+                    tvInfo.setText(getResources().getString(R.string.ahead));
+                if (inp < num)
+                    tvInfo.setText(getResources().getString(R.string.behind));
+                if (inp == num) {
+                    tvInfo.setText(getResources().getString(R.string.hit));
+                    bControl.setText(getResources().getString(R.string.play_more));
+                    isFinished = true;
+                }
             }
         } else {
             num = (int) (Math.random() * 100);
