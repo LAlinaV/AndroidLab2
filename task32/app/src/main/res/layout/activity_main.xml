@@ -67,7 +67,7 @@
     android:textStyle="bold"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
-<MainActivity.Console
+<com.example.task32.Console
     android:id="@+id/console"
     android:layout_height="100sp"
     android:layout_width="match_parent" />
