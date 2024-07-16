@@ -21,17 +21,19 @@
             android:id="@+id/TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="textView" />
+            android:text="@string/try_to_guess" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="number" />
+                android:text="number"
+                tools:ignore="TouchTargetSizeCheck" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -40,7 +42,7 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="button" />
+                android:text="@string/input_value" />
         </TableRow>
 
     </TableLayout>
