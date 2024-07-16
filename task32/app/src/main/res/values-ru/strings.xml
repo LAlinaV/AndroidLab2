@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraTranslation">
+<string name="app_name">Угадай число</string>
+    <string name="title.numberguess">Угадай число</string>
+    <string name="btn.start">Начать</string>
+    <string name="label.guess">Угадайте число:</string>
+    <string name="btn.do.guess">Сделай предположение!</string>
+    <string name="edit.number">Число</string>
+    <string name="status.start.info">Нажмите кнопку НАЧАТЬ, чтобы начать игру</string>
+    <string name="label.log">Лог:</string>
+    <string name="guess.hint">Угадайте число между %1$d и %2$d</string>
+    <string name="status.too.low">Извините, слишком мало.</string>
+    <string name="status.too.high">Извините, слишком много.</string>
+    <string name="status.hit">Ты получил это после %1$d попыток! Нажмите "НАЧАТЬ", чтобы начать новую игру.</string>
+</resources>
