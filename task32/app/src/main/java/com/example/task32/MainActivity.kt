@@ -55,17 +55,23 @@ class MainActivity : AppCompatActivity() {
         tries++
         log("Guessed ${num.text} (tries:${tries})")
         val g = num.text.toString().toInt()
-        if(g < number) {
-            status.setText(R.string.status_too_low)
-            num.setText("")
-        } else if(g > number){
-            status.setText(R.string.status_too_high)
-            num.setText("")
+        if (g < 1 || g > 7) {
+            status.setText(R.string.status_error)
         } else {
-            status.text = getString(R.string.status_hit,
-                tries)
-            started = false
-            doGuess.setEnabled(false)
+            if (g < number) {
+                status.setText(R.string.status_too_low)
+                num.setText("")
+            } else if (g > number) {
+                status.setText(R.string.status_too_high)
+                num.setText("")
+            } else {
+                status.text = getString(
+                    R.string.status_hit,
+                    tries
+                )
+                started = false
+                doGuess.setEnabled(false)
+            }
         }
     }
 

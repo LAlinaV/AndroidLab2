@@ -8,6 +8,7 @@
     <string name="edit.number">Число</string>
     <string name="status.start.info">Нажмите кнопку НАЧАТЬ, чтобы начать игру</string>
     <string name="label.log">Лог:</string>
+    <string name="status.error">Неверный ввод.</string>
     <string name="guess.hint">Угадайте число между %1$d и %2$d</string>
     <string name="status.too.low">Извините, слишком мало.</string>
     <string name="status.too.high">Извините, слишком много.</string>
